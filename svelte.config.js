@@ -8,7 +8,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '',
+			base: process.env.NODE_ENV === 'production' ? '/website' : '',
+            assets: process.env.NODE_ENV === 'production' ? '/website' : '',
 		}
 	}
 };
