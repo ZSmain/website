@@ -1,9 +1,11 @@
 <script>
 	import '../app.css';
+	/** @type {{children?: import('svelte').Snippet}} */
+	let { children } = $props();
 </script>
 
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<!-- svelte-ignore a11y-label-has-associated-control -->
+<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+<!-- svelte-ignore a11y_label_has_associated_control -->
 <div class="navbar bg-base-100">
 	<div class="navbar-start">
 		<div class="dropdown">
@@ -73,4 +75,4 @@
 	</div>
 </div>
 
-<slot />
+{@render children?.()}
