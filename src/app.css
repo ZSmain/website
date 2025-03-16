@@ -1,3 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Convert hex colors to space-separated RGB values for Tailwind v4 */
+  --color-background: #0A3431;
+  --color-surface: #0F4A2E;
+  --color-text: #FFFFFF;
+  --color-accent: #F9B84E;
+  --color-border: #1A5F3C;
+
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', 'system-ui', '-apple-system', 'sans-serif';
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-text/60 hover:text-accent transition-colors duration-200;
+  }
+  
+  .nav-link.active {
+    @apply text-accent;
+  }
+}
+
+@layer utilities {
+  .prose h2 {
+    @apply text-2xl font-medium text-text mt-8 mb-4;
+  }
+  
+  .prose p {
+    @apply text-text/80 mb-4;
+  }
+  
+  .prose a {
+    @apply text-accent hover:text-accent/80;
+  }
+}
