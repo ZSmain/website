@@ -1,34 +1,49 @@
 <script>
-	import { FileText, Briefcase, User } from 'lucide-svelte';
+	const links = [
+		{ href: 'https://github.com/ZSmain', text: 'GitHub' },
+		{ href: 'mailto:ishmael.zouaoui@gamil.com', text: 'Email' }
+	];
 </script>
 
-<div class="space-y-12">
-	<section class="text-center space-y-4">
-		<h1 class="text-4xl font-bold">Your Name</h1>
-		<p class="text-xl text-gray-400">Full Stack Developer</p>
-		<p class="max-w-2xl mx-auto text-gray-300">
-			Passionate about creating elegant solutions to complex problems. Specializing in web
-			development, cloud architecture, and open source contributions.
+<div class="mx-auto max-w-2xl space-y-12">
+	<section class="space-y-4">
+		<h1 class="text-accent font-mono text-4xl font-semibold">Hi, I'm Ismail</h1>
+		<p class="text-text/80 text-xl leading-relaxed">
+			I'm a software developer with a focus on web technologies and creating intuitive user experiences.
+			Currently at <a href="https://flexup.com" class="text-accent hover:text-accent/80">FlexUp</a>, 
+			where I am helping building a platform that enable businesses to manage their finances in innovative ways.
 		</p>
 	</section>
 
-	<div class="grid md:grid-cols-3 gap-8">
-		<a href="/projects" class="block p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition">
-			<Briefcase class="mb-4" size={32} />
-			<h2 class="text-xl font-semibold mb-2">Projects</h2>
-			<p class="text-gray-400">Explore my latest work and side projects</p>
-		</a>
+	<section class="space-y-4">
+		<h2 class="text-accent font-mono text-2xl font-semibold">Selected projects</h2>
+		<ul class="space-y-3">
+			<li>
+				<a href="https://hackbcn.org" class="group block">
+					<span class="text-text group-hover:text-accent">HackBCN website</span>
+					<span class="text-text/60 block text-sm">A website for the HackBCN coference</span>
+				</a>
+			</li>
+		</ul>
+	</section>
 
-		<a href="/blog" class="block p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition">
-			<FileText class="mb-4" size={32} />
-			<h2 class="text-xl font-semibold mb-2">Blog</h2>
-			<p class="text-gray-400">Technical articles and thoughts on development</p>
-		</a>
+	<section class="space-y-4">
+		<h2 class="text-accent font-mono text-2xl font-semibold">Recent posts</h2>
+		<ul class="space-y-3">
+			<li>
+				<a href="/blog/aesthetics" class="group block">
+					<span class="text-text group-hover:text-accent">Aesthetics</span>
+					<span class="text-text/60 block text-sm">I was wrong about aesthetics</span>
+				</a>
+			</li>
+		</ul>
+	</section>
 
-		<a href="/about" class="block p-6 bg-gray-900 rounded-lg hover:bg-gray-800 transition">
-			<User class="mb-4" size={32} />
-			<h2 class="text-xl font-semibold mb-2">About</h2>
-			<p class="text-gray-400">Learn more about my journey and skills</p>
-		</a>
-	</div>
+	<section class="border-border border-t pt-8">
+		<div class="flex gap-4">
+			{#each links as link}
+				<a href={link.href} class="text-text/60 hover:text-accent">{link.text}</a>
+			{/each}
+		</div>
+	</section>
 </div>
