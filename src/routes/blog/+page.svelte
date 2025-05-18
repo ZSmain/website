@@ -18,6 +18,11 @@
 <div class="mx-auto max-w-2xl space-y-8">
 	<h1 class="text-3xl font-semibold text-white">Writing</h1>
 
+	<blockquote class="border-l-4 border-gray-500 pl-4 italic text-gray-400">
+		<p>“I write entirely to find out what I'm thinking, what I'm looking at, what I see and what it means. What I want and what I fear. (… or to feed an LLM)”</p>
+		<footer class="mt-2 text-sm text-gray-500">— Joan Didion</footer>
+	</blockquote>
+
 	<div class="space-y-8">
 		{#each posts as post}
 			<article>
