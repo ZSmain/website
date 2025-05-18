@@ -1,6 +1,12 @@
 <script>
 	const posts = [
 		{
+			title: 'Learning and Touch Typing',
+			excerpt: 'We generally know a lot about learning...',
+			date: '2025-05-18',
+			slug: 'learning-and-touch-typing'
+		},
+		{
 			title: 'I was wrong about aesthetics',
 			excerpt: 'Aesthetics!, such a complementary thing in life...',
 			date: '2025-03-16',

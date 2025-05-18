@@ -20,6 +20,45 @@
 			</p>
         	`
 		},
+		'learning-and-touch-typing': {
+			title: 'Learning and Touch Typing',
+			date: '2025-05-18',
+			content: `
+				<p>
+					We generally know a lot about learning—how to learn effectively and what hinders the learning process. Yet sometimes, or quite often, we tend to do things that impede our progress or make learning sessions pointless. We can continue this way for a long time without much reflection, but eventually, it will haunt us when we discover our "efforts" went in vain. This realization manifests in different ways: most notably as bad grades if you're taking an exam, but much learning happens outside school (I believe). Whether we're learning for work, a project, shifting careers and exploring a new domain, or mastering something personally important like another language, we often lack formal evaluation. Nevertheless, the consequences of ineffective learning will eventually surface one way or another.
+				</p>
+				<p>
+					One frustrating experience I've had is when you Google or ask an AI about a problem, and the result looks strangely familiar—like déjà vu. It seems familiar because you think you know this information, but you don't. This happens repeatedly until you finally realize you've searched for this before, but somehow it didn't stick.
+				</p>
+				<p>
+					The reality is that the information didn't stick because the learning process itself wasn't efficient enough. Perhaps we weren't concentrating adequately, or we failed to review the information properly. The concentration issue can involve many factors: multitasking (like listening to something while reading), being stressed, or feeling tired.
+				</p>
+				<p>
+					It's challenging to keep these principles in mind whenever we're learning something new so we can make appropriate adjustments. I think this difficulty stems from how hard it is to benchmark the learning process in the short term. If we had a graph or signals moving up and down while learning, we could instantly adjust our approach or at least pause to identify what's wrong.
+				</p>
+				<p>
+					That said, some skills we learn can be benchmarked, and touch typing is one of those things.
+				</p>
+				<p>
+					Learning to touch type for the first time or changing from a familiar keyboard layout can be incredibly daunting—so much so that you might want to give up and continue hunt-and-peck typing or stick with your current layout. I've experienced both scenarios.
+				</p>
+				<p>
+					I first learned touch typing on an AZERTY layout, which was painful. It was equally challenging when I later switched to Dvorak, making me want to revert to AZERTY. I felt the same way about a year ago when I decided to learn QWERTY, mainly because default shortcuts in most software are designed with QWERTY in mind.
+				</p>
+				<p>
+					This urge to give up appears in almost any type of learning, whether it's a physical activity like driving or an intellectual pursuit like mastering specific software or learning a new language—be it natural or programming.
+				</p>
+				<p>
+					Learning can be fun and relatively easy at the beginning. For example, when learning to drive, you can quickly understand what the steering wheel, gear stick, gas pedal, brake pedal, and clutch pedal do. However, coordinating all these elements while also checking the rearview mirror periodically is far from simple. Touch typing follows the same pattern: the concepts are straightforward, but placing all fingers correctly on the home row and moving only the appropriate fingers to type specific letters is much more challenging. The difference is that touch typing is easily benchmarked with measurements of accuracy, typing speed, and immediate feedback when you type incorrect letters.
+				</p>
+				<p>
+					This observable aspect of learning reveals much more. For instance, when you attempt to multitask by typing while listening to something, you'll notice how significantly it affects your speed, accuracy, or both. Beyond multitasking, factors like fatigue, stress, rushing, or lack of focus can all impair your typing performance.
+				</p>
+				<p>
+					While these observations might seem obvious, we need to remember them whenever we're learning something that can't be easily measured. We should pause and consider whether we're approaching the task correctly or at an appropriate time. We can compare our experience to touch typing or any other easily benchmarked skill that resonates with our personal experience.
+				</p>
+			`
+		}
 	};
 
 	let post = $derived(posts[$page.params.slug]);

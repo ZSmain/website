@@ -31,6 +31,12 @@
 		<h2 class="text-accent font-mono text-2xl font-semibold">Recent posts</h2>
 		<ul class="space-y-3">
 			<li>
+				<a href="/blog/learning-and-touch-typing" class="group block">
+					<span class="text-text group-hover:text-accent">Learning and Touch Typing</span>
+					<span class="text-text/60 block text-sm">We generally know a lot about learning</span>
+				</a>
+			</li>
+			<li>
 				<a href="/blog/aesthetics" class="group block">
 					<span class="text-text group-hover:text-accent">Aesthetics</span>
 					<span class="text-text/60 block text-sm">I was wrong about aesthetics</span>
